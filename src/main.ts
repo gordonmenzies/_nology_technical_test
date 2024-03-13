@@ -34,7 +34,7 @@ const filterList = () => {
   pokemonContainer.innerHTML = "";
 
   filteredPokemon.forEach((pokemon) => {
-    pokemonContainer.innerHTML += `<div class=".card">
+    pokemonContainer.innerHTML += `<div class="card">
     <image class="card__image" src=${pokemon.sprite}>
       <div class="card__content">
     <h1 class="card__heading">${pokemon.name}</h1>
