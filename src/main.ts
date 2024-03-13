@@ -23,6 +23,10 @@ let filteredPokemon: Pokemon[] = [];
   Methods
 */
 
+/*
+  Filter throught the list taking input from the input element 
+*/
+
 const filterList = () => {
   console.log(input.value);
   filteredPokemon = pokemonArray.filter((pokemon) => {
@@ -33,6 +37,10 @@ const filterList = () => {
 
   pokemonContainer.innerHTML = "";
 
+  /*
+  For each loop to access the pokemon in the array 
+  and enter the respective elements in the html 
+*/
   filteredPokemon.forEach((pokemon) => {
     pokemonContainer.innerHTML += `<div class="card">
     <image class="card__image" src=${pokemon.sprite}>
@@ -51,6 +59,7 @@ const filterList = () => {
 input.addEventListener("input", filterList);
 
 /*
+  when the page is opened and nothing is inputted to the input 
   For each loop to access the pokemon in the array 
   and enter the respective elements in the html 
 */
